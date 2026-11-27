@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Avijit Ganguly | Accountant, GST and Tax Compliance, Virtual Assistant</title>
+<meta name="description" content="Avijit Ganguly is an accountant with 15+ years of experience in bank reconciliation, ledgers, month-end close, financial reporting and high-volume data management. Based in Murshidabad, West Bengal, India.">
+<meta name="theme-color" content="#0b6b5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Avijit Ganguly | Accountant and Virtual Assistant">
+<meta property="og:description" content="15+ years in accounting: reconciliations, month-end close, GST and tax compliance, audit-ready records.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b6b5c'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' text-anchor='middle' fill='white'%3EAG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#f5f7f6; --surface:#ffffff; --fg:#14211f; --muted:#55645f; --line:#d8e0dd;
+  --accent:#0b6b5c; --accent-ink:#ffffff; --tint:#e4f0ed;
+  --font-display:'Space Grotesk','Segoe UI',system-ui,sans-serif;
+  --font-body:'Inter','Segoe UI',system-ui,sans-serif;
+  --font-mono:'IBM Plex Mono',ui-monospace,'Courier New',monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0e1514; --surface:#141e1c; --fg:#e7efed; --muted:#9bb0aa; --line:#2a3a37;
+    --accent:#4cc2ad; --accent-ink:#06201b; --tint:#16302b; color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:16px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:16px;line-height:1.6;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:960px;margin:0 auto;padding-block:40px 56px;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:var(--font-display);margin:0;text-wrap:balance;line-height:1.15}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:700;letter-spacing:-0.02em}
+h2{font-size:1.5rem;font-weight:600;letter-spacing:-0.01em}
+h3{font-size:1.05rem;font-weight:600}
+p{margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.label{font-family:var(--font-mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+
+.hero{display:flex;flex-direction:column;gap:20px}
+.role{font-family:var(--font-display);font-size:1.15rem;color:var(--accent);font-weight:500}
+.lede{max-width:65ch;color:var(--fg);font-size:1.05rem}
+.open{display:inline-flex;align-self:flex-start;gap:8px;align-items:center;background:var(--tint);color:var(--accent);
+  padding:6px 12px;border-radius:999px;font-size:.85rem;font-weight:500}
+.open::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.contact div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;
+  display:flex;flex-direction:column;gap:4px;min-width:0}
+.contact .val{font-family:var(--font-mono);font-size:.9rem;overflow-wrap:anywhere}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:inherit;font-size:.8rem;cursor:pointer;background:transparent;color:var(--accent);
+  border:1px solid var(--accent);border-radius:6px;padding:3px 10px}
+button:hover{background:var(--tint)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;border-block:1px solid var(--line)}
+.stat{padding:20px 16px 20px 0;display:flex;flex-direction:column;gap:4px;min-width:0}
+.stat b{font-family:var(--font-mono);font-weight:500;font-size:1.9rem;color:var(--accent);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:.9rem}
+
+section{display:flex;flex-direction:column;gap:20px}
+.sec-head{display:flex;flex-direction:column;gap:4px}
+
+.ledger-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:620px}
+th,td{text-align:left;padding:12px 16px;vertical-align:top;border-bottom:1px solid var(--line)}
+th{font-family:var(--font-mono);font-weight:500;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);background:var(--tint)}
+tr:last-child td{border-bottom:0}
+td.fig{font-family:var(--font-mono);font-variant-numeric:tabular-nums;color:var(--accent);white-space:nowrap;font-weight:500}
+
+.jobs{display:flex;flex-direction:column;gap:0;border-left:2px solid var(--line);margin-left:6px}
+.job{padding:0 0 32px 24px;position:relative;display:flex;flex-direction:column;gap:8px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job.current::before{background:var(--accent)}
+.job .where{color:var(--muted);font-size:.95rem}
+.job ul{margin:4px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:4px;max-width:75ch}
+.job li::marker{color:var(--accent)}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.skillbox{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--tint);color:var(--fg);padding:4px 10px;border-radius:6px;font-size:.88rem}
+
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px}
+.col{display:flex;flex-direction:column;gap:16px}
+.plain{display:flex;flex-direction:column;gap:12px;margin:0;padding:0;list-style:none}
+.plain li{display:flex;flex-direction:column;gap:2px}
+.plain .when{color:var(--muted);font-size:.9rem}
+footer{color:var(--muted);font-size:.85rem;border-top:1px solid var(--line);padding-top:20px}
+@media (prefers-reduced-motion:no-preference){button{transition:background .15s}}
+@media print{
+  body{background:#fff;color:#000}
+  button{display:none}
+  .wrap{gap:28px;padding-block:0}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="label">Portfolio · Murshidabad, West Bengal, India</span>
+    <h1>Avijit Ganguly</h1>
+    <p class="role">Accountant · GST and Tax Compliance · Virtual Assistant</p>
+    <p class="lede">Accountant with more than 15 years of experience in bank reconciliation, ledgers, month-end close, financial reporting and high-volume data management. I work carefully, meet deadlines, and keep records audit-ready.</p>
+    <span class="open">Open to accounting, finance operations and credit support roles</span>
+    <div class="contact">
+      <div>
+        <span class="label">Email</span>
+        <a class="val" id="email" href="mailto:gangulyavijit55@gmail.com">gangulyavijit55@gmail.com</a>
+        <span class="row"><button type="button" data-copy="email">Copy</button></span>
+      </div>
+      <div>
+        <span class="label">Phone</span>
+        <a class="val" id="phone" href="tel:+918001816629">+91 80018 16629</a>
+        <span class="row"><button type="button" data-copy="phone">Copy</button></span>
+      </div>
+      <div>
+        <span class="label">LinkedIn</span>
+        <a class="val" href="https://www.linkedin.com/in/avijit-ganguly-56266837b" target="_blank" rel="noopener">linkedin.com/in/avijit-ganguly-56266837b</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="stats" aria-label="Career figures">
+    <div class="stat"><b>15+</b><span>years in accounting</span></div>
+    <div class="stat"><b>$1M+</b><span>transactions reconciled monthly</span></div>
+    <div class="stat"><b>350+</b><span>farmer records maintained in Excel</span></div>
+    <div class="stat"><b>0</b><span>billing disputes across 150 to 200 customers</span></div>
+  </div>
+
+  <section id="results">
+    <div class="sec-head">
+      <span class="label">Track record</span>
+      <h2>Results from my work</h2>
+    </div>
+    <div class="ledger-scroll">
+      <table>
+        <thead><tr><th>Result</th><th>Where</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td class="fig">1 year in 2 days</td><td>Hazarduari Sabuj Khet Fed Farmers Co. Ltd</td><td>Cleared a year of pending accounts during an urgent situation.</td></tr>
+          <tr><td class="fig">5 years in 15 days</td><td>Hazarduari Sabuj Khet Fed Farmers Co. Ltd</td><td>Completed five years of pending account work.</td></tr>
+          <tr><td class="fig">0 disputes</td><td>Manmohini Textile Pvt. Ltd.</td><td>Managed daily billing and account operations for 150 to 200 customers.</td></tr>
+          <tr><td class="fig">0 discrepancies</td><td>HDFC Bank Ltd.</td><td>Checked field-level data across 150+ loan customer accounts for a high-volume branch.</td></tr>
+          <tr><td class="fig">15% faster</td><td>HDFC Bank Ltd.</td><td>Sped up the month-end close by maintaining ledger entries and journals.</td></tr>
+          <tr><td class="fig">10% fewer</td><td>HDFC Bank Ltd.</td><td>Reduced invoice discrepancies, improving payment accuracy.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="sec-head">
+      <span class="label">Experience</span>
+      <h2>Where I have worked</h2>
+    </div>
+    <div class="jobs">
+
+      <article class="job current">
+        <h3>Accountant and Virtual Assistant</h3>
+        <p class="where">Hazarduari Sabuj Khet Fed Farmers Co. Ltd, Murshidabad · <span class="mono">Dec 2017 to present</span></p>
+        <ul>
+          <li>Own monthly reconciliations for transactions exceeding $1M and general ledger reconciliations for a clean month-end close.</li>
+          <li>Prepare journal entries, account analyses and supporting documents for audits and reporting.</li>
+          <li>Review payables and receivables, resolve discrepancies, and consolidate financial statements for management.</li>
+          <li>Interpret financial data, identify variances and recommend corrective actions to improve controls.</li>
+          <li>Coordinate audit requests, handle payroll, budgeting and cash and bank reconciliations, and mentor junior staff.</li>
+          <li>Organise board meetings and maintain records of 350+ farmers in Excel.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Data Entry Operator cum Accountant</h3>
+        <p class="where">HDFC Bank Ltd., Murshidabad · <span class="mono">Jan 2016 to Nov 2017</span></p>
+        <ul>
+          <li>Reviewed daily cash books, ledgers and balance sheets, and updated loan customer data in Excel under written compliance guidelines.</li>
+          <li>Verified KYC documents by video call for 50+ customers a month, flagged mismatches and escalated suspected systemic issues to the branch compliance team.</li>
+          <li>Verified vendor invoices against purchase orders and contracts, and supported accruals, audit preparation and payroll administration.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Account Executive</h3>
+        <p class="where">Appen.com, Murshidabad · <span class="mono">Dec 2014 to Dec 2015</span></p>
+        <ul>
+          <li>Kept accounting records in Tally and managed receivables, payables and cash application.</li>
+          <li>Reconciled customer accounts, resolved billing discrepancies and ran the monthly close to deadline.</li>
+          <li>Completed transcription and translation projects in English, Bengali and Hindi while working remotely.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Account Executive</h3>
+        <p class="where">Manmohini Textile Pvt. Ltd., Murshidabad · <span class="mono">May 2011 to Nov 2014</span></p>
+        <ul>
+          <li>Processed 250+ billing transactions a day and monitored expense reports and purchase records for policy compliance.</li>
+          <li>Helped introduce new finance software and streamlined filing, improving audit readiness.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Medical Representative</h3>
+        <p class="where">Ordain Health Care Pvt. Ltd., Murshidabad · <span class="mono">Mar 2009 to Apr 2011</span></p>
+        <ul>
+          <li>Generated Rs. 2,10,000 in sales within three months and onboarded 50 doctors.</li>
+          <li>Built relationships with physicians, chemists and hospital staff, and kept accurate call reports and daily sales records.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head">
+      <span class="label">Skills</span>
+      <h2>What I can do</h2>
+    </div>
+    <div class="skills">
+      <div class="skillbox">
+        <h3>Accounting</h3>
+        <div class="chips"><span>General ledger</span><span>Bank reconciliation</span><span>Payables and receivables</span><span>Invoice processing</span><span>Month-end close</span><span>Financial reporting</span><span>Payroll</span><span>Budgeting</span><span>Audit support</span><span>GST and tax compliance</span></div>
+      </div>
+      <div class="skillbox">
+        <h3>Software</h3>
+        <div class="chips"><span>Tally ERP</span><span>QuickBooks</span><span>Zoho Books</span><span>Excel: VLOOKUP, pivot tables, financial modelling</span><span>PowerPoint</span></div>
+      </div>
+      <div class="skillbox">
+        <h3>Data and verification</h3>
+        <div class="chips"><span>Data entry</span><span>Data analytics</span><span>KYC verification</span><span>Document review</span><span>Error correction</span><span>Transcription and translation</span><span>Label Studio</span><span>Labelbox</span></div>
+      </div>
+      <div class="skillbox">
+        <h3>Working style</h3>
+        <div class="chips"><span>Time management</span><span>Teamwork</span><span>Problem solving</span><span>Accountability</span><span>Integrity and confidentiality</span><span>English, Bengali, Hindi</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="two" id="education">
+    <div class="col">
+      <div class="sec-head"><span class="label">Education</span><h2>Education and certificates</h2></div>
+      <ul class="plain">
+        <li><h3>Bachelor of Commerce</h3><span class="when">University of Kalyani, 2004</span></li>
+        <li><h3>Diploma in Financial Accounting</h3><span class="when">Youth Computer Training Centre, March 2010</span></li>
+        <li><h3>Data Analytics</h3><span class="when">Great Learning Academy</span></li>
+        <li><h3>Translation Using Python</h3><span class="when">Great Learning Academy, May 2020</span></li>
+        <li><h3>Social Media Manager Certificate</h3><span class="when">Great Learning Academy, May 2020</span></li>
+        <li><h3>Certified Transcription Specialist</h3></li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="sec-head"><span class="label">Community</span><h2>Volunteering</h2></div>
+      <ul class="plain">
+        <li><h3>Executive, Fundraising</h3><span class="when">Team Everest, April to May 2025</span>
+          <p>Collected donations and distributed resources to underprivileged children.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>Avijit Ganguly · Accountant · Murshidabad, West Bengal, India</footer>
+</div>
+
+<script>
+document.querySelectorAll('button[data-copy]').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var el = document.getElementById(btn.getAttribute('data-copy'));
+    var done = function(){ var t = btn.textContent; btn.textContent = 'Copied'; setTimeout(function(){ btn.textContent = t; }, 1500); };
+    var fallback = function(){
+      try {
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      } catch(e) {}
+    };
+    try {
+      navigator.clipboard.writeText(el.textContent).then(done, fallback);
+    } catch(e) { fallback(); }
+  });
+});
+</script>
+</body>
+</html>
